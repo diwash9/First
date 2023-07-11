@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Website</title>
+    <style>
+       *{
+        
+        box-sizing: border-box;        
+       }
+       .head{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+            background-color: rgb(8, 7, 7);
+            color: rgb(255, 255, 255);
+          
+        }
+        
+        .menu{
+            float: left;
+            width: 20%;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;  
+        
+        }
+        .menuitem{
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 2px solid #111111;
+            overflow: auto;
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .right{
+            width: 20%;
+            background-color: #f1f1f1;
+        }
+        
+        .footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+            font-size: 12px;
+        }
+        marquee{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        @media only screen and (max-width:800px){
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .main,
+            .menu,
+            .right {
+               width: 100%;
+                padding: 0;
+            }
+          
+        }
+        
+    </style>
+</head>
+<body>
+<div class="head">
+    <h1>NEPAL</h1>
+    <h3>The 8th wonder of the World</h3>
+  
+    
+</div>
+<div style="overflow: auto;">
+    <div class="menu">
+        <div class="menuitem">Food</div>
+        <div class="menuitem">History</div>
+        <div class="menuitem">Transport</div>
+        <div class="menuitem">Gallery</div>
+    </div>
+    <div class="main">
+        <h2>BRIEF INTRODUCTION</h2>
+        <p>Nepal is a beautiful country at the lap of the Himalayas. Nepal is a landlocked coutry which is bounded by India from three directions and by China from the North</p>
+        <img src = "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 100%; height: 350;" >
+    </div>
+    
+    <div class="right">
+        <h2>Full Name</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque at voluptatum est eligendi qui error consectetur numquam, itaque aliquid explicabo facilis maiores quasi dolorem id autem nemo in? Velit, itaque?</p>
+        <h2>Where ?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nulla quaerat labore voluptate quae id tempora assumenda atque doloribus iste, quia error ad necessitatibus officia non numquam placeat voluptatibus? Quasi?</p>
+        <h2>Religion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugiat voluptates maiores quibusdam alias, tenetur repudiandae quidem doloribus cupiditate fuga odio dolorum ex voluptas nemo quasi quod accusamus animi. Fugiat!</p>
+    </div>
+</div>
+<div class="footer">
+    <marquee scrollamount = "10">Nepal : the worst country interms of politics</marquee>
+</div>
+
+</body>
+</html>
